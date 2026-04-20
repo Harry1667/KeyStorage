@@ -1,0 +1,33 @@
+# 依賴與建置產物
+node_modules/
+dist/
+build/
+.cache/
+
+# 環境與密鑰
+.env
+.env.*
+!.env.example
+secrets.json
+*.key
+*.pem
+config.php
+
+# 敏感文件（含真實密碼/token/IP/部署 SOP）
+01-dev/
+
+# SQLite 資料庫
+database/
+*.sqlite
+*.db
+
+# macOS
+.DS_Store
+._*
+
+# IDE
+.vscode/
+.idea/
+
+# 日誌
+*.log
