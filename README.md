@@ -27,3 +27,35 @@ npm run dev
 # 2. 複製 config.php 並填入 DB 連線設定
 # 3. 將 api.php、config.php 部署至 PHP 伺服器
 ```
+
+---
+
+## English
+
+An end-to-end encrypted API-key vault. Many services show an API key only once — lose it and you're done. KeyStorage lets you stash every key safely; the browser encrypts before transmission, and the server only ever sees ciphertext.
+
+### Features
+- Add / view / copy / delete API keys
+- Client-side encryption (zero-knowledge server, ciphertext only)
+- One-click copy to clipboard
+- Password-protected access
+
+### Architecture
+| Layer | Tech |
+|-------|------|
+| Frontend | React 19 + TypeScript + Vite + Tailwind CSS v4 |
+| Backend | PHP (`api.php`) |
+| Database | MySQL (`schema.sql`) |
+
+### Quick start
+```bash
+# Frontend dev
+cd 02-web
+npm install
+npm run dev
+
+# Backend (requires PHP + MySQL)
+# 1. Create the database (run schema.sql)
+# 2. Copy config.php and fill in DB credentials
+# 3. Deploy api.php and config.php to a PHP server
+```
